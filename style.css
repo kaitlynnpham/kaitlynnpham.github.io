@@ -1,18 +1,45 @@
-body{background-color: rgb(47, 56, 39);}
+body{background-color: rgb(61, 71, 50);}
 
+.introduction{
+    text-align:center;
+    position:relative;
+    color:white; 
+}
+.welcome-text{
+    font-size:3rem;
+    opacity:0;
+    animation:slideIn 5s ease-out forwards; 
+   
+}
+@keyframes slideIn{
+    0%{
+        transform: translateY(-20px);
+        opacity:0;
+
+    }
+    100%{
+        transform:translateY(0);
+        opacity:1;
+
+    }
+}
 h1{
-   color: rgb(78, 255, 87); text-align: center;
+   color: rgb(239, 244, 239);
 }
 
-p1{
-    color: white;
-    
-    padding-top: 50px; 
+h2{
+    color: rgb(128, 243, 93);
+    text-align: center; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
+.nav{
+    background-color: rgb(253, 236, 213);
+    overflow:hidden; 
+}
 .nav a{
     float:right; 
-    color: white;
+    color: rgb(30, 33, 29);
     text-align: center;
     text-decoration:none; 
     font-size:17px;
@@ -21,8 +48,10 @@ p1{
 }
 
 .nav a:hover{
-    color:rgb(112, 245, 112);
+    color:rgb(81, 112, 249);
 }
+
+
 
 .center{
     display:block;
@@ -31,3 +60,10 @@ p1{
     width:70%;
 }
 
+p1{
+    padding: 50px; 
+    text-align: center;
+    font-size: medium;
+    color: white; 
+
+}
