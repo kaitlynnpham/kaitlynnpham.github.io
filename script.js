@@ -1,17 +1,30 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const welcomeScreen = document.getElementById("introduction");
+
+window.onload = () => {
+    const welcomeScreen = document.getElementById('introduction');
     const homepage = document.getElementById('homepage');
   
-    // Show loader and welcome message initially
+    const puzzles = [
+      document.getElementById('puzzle1'),
+      document.getElementById('puzzle2'),
+      document.getElementById('puzzle3'),
+      document.getElementById('puzzle4')
+    ];
+  
+  
     welcomeScreen.style.display = 'flex';
   
-    // Set up the first click to remove the loader
- setTimeout(() => {
-      // After the first click, hide the welcome screen and show the homepage
-      welcomeScreen.style.opacity = "0";
+   
+   puzzles.forEach((tile, index) => {
       setTimeout(() => {
-        welcomeScreen.style.display = 'none';
-        homepage.classList.add('visible');
-    }, 1000);
- },3000);
-});
+        tile.style.opacity = 1; 
+      }, index * 500); 
+    });
+  setTimeout(()=> {
+
+    setTimeout(() => {
+      welcomeScreen.style.display = 'none';  
+      homepage.style.display = 'block';   
+    },1500);  
+    }, puzzles.length * 500); 
+  };
+  

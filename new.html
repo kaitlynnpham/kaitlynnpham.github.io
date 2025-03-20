@@ -1,123 +1,168 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
 
 
-<title>Kaitlynn Pham</title>
+    <title>Kaitlynn Pham</title>
 </head>
 
-<body> 
+<body>
 
-<div id="introduction">
-    <div id="welcome"> 
-        <h1>Kaitlynn Pham</h1>
-        <img src="IMG_2865.JPG" alt="Forest opening" class="center" width=" 100%" >  
-        <p> Welcome</p>
-    </div>  
-</div>
+    <div id="introduction">
+        <div class="loader">
+            <div class="puzzle" id="puzzle1"></div>
+            <div class="puzzle" id="puzzle2"></div>
+            <div class="puzzle" id="puzzle4"></div>
+            <div class="puzzle" id="puzzle3"></div>
+        </div>
 
-<div id="homepage" >
+        <p>Welcome</p>
 
-<div class="nav">
-    <a href="#contact">Contact</a>
-    <a href="#about">About Me</a>
-    <a href="#home">Home</a>
-</div>
-<h1>Kaitlynn Pham</h1>
-
-<h2> 
-    
-   <br><br><br> About Me
-</h2>
-<p1>
-   Hi! I recently graduated from University of Nevada-Las Vegas with a bachelor's in
-    Computer Science and Kinesiology. 
-
-</p1>
-
-<h2>Projects</h2>
-<h3>
-    Robotics Software Developer Internship 
-</h3>
-<p1> 
-    <ul>
-        Developed an Astar Area Coverage algorithm to avoid objects and cover a defined area. 
-        Detected objects using a Lidar to convert point clouds and get clusters of objects to determine 
-        where objects are located on a 2d map. 
-        Used a gps system to determine latitude and longitude of objects and waypoints of path. 
-    </ul>
-
-</p1>
-<div class="slideshow">
-   
-    <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="ImageToStl.com_room (2).png" style="width:100%">
-        <div class="text">Lidar View</div>
     </div>
 
-    <div class="mySlides fade">
-        <div class="numbertext"> 2 / 3</div>
-        <img src= "343584045-9298d87d-b619-40fd-b876-1c5a705a5daf.png" style="width:100%" >
-        <div class="text">lidar view1</div>
-    </div>
+    <div id="homepage">
 
-    <div class="mySlides fade">
-        <div class="numbertext"> 3 / 3</div>
-        <img src="343584082-76114255-423c-47a5-8d30-e293fb3a21ec.png" style="width:100%" >
-        <div class="text">lidar view2</div>
-    </div>
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-</div>
-<br>
 
-<div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-</div>
+        <div class="nav">
+            <a href="#contact">Contact</a>
+            <a href="#projects">Portfolio</a>
+            <a href="#about">Home</a>
+            <h1> Kaitlynn Pham</h1>
+        </div>
 
-<br>
-<br>
-<script>
-    let slideIndex=1;
-    showSlides(slideIndex);
-    function plusSlides(n) {
-        showSlides(slideIndex +=n);
-    }
-    function currentSlide(n){
-        showSlides(slideIndex =n);
-    } 
 
-    function showSlides(n){
-        let i;
-        let slides=
-        document.getElementsByClassName("mySlides");
-        let dots= document.getElementsByClassName("dot");
-        if (n >slides.length){
-            slideIndex=1
-        }
-        if (n<1){slideIndex = slides.length}
-        for (i=0; i <slides.length; i++){
-            slides[i].style.display="none";
-        }
-        for (i=0; i <dots.length; i++){
-        dots[i].className = dots[i].className.replace("active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-    }
-</script>
-<video width="520" height="440" controls class="center">
-    <source src="Area coverage robot0 9_25_24 .mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+        <h2>About Me</h2>
+        <section id="about">
+            <div class="about-content">
+                <p>
+                    Hello, my name is Kaitlynn and I recently graduated from the University of Nevada-Las Vegas,
+                    with a degree in Computer Science and Kinesiology. Over the past two years, I've honed my
+                    programming skills in C++ and Python, applying them to develop innovative solutions in both academic
+                    and professional settings.
+                </p>
+                <p>
+                    During my internship at Koshee AI, I had the opportunity to design and implement an area
+                    coverage algorithm, capable of navigating around obstacles. This experience not only reinforced my
+                    problem-solving abilities but also deepened my interest in integrating technology with real-world
+                    applications.
+                </p>
+                <p>
+                    I am eager to leverage my technical expertise and passion for healthcare technology to contribute to
+                    projects that make a meaningful impact. Beyond my academic pursuits, I am deeply passionate about
+                    designing engaging projects, particularly in game development.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="IMG_8276.png" alt="Kaitlynn">
+            </div>
+        </section>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+            
+            <h3>
+                Robotics Software Developer Internship
+            </h3>
 
-<div> 
-    <script src="script.js">
-    
-    </script>
+            <div class="slideshow">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="ImageToStl.com_room (2).png" class=" slide-image">
+
+
+                    <div class="text">Lidar View</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"> 2 / 3</div>
+                    <img src="343584045-9298d87d-b619-40fd-b876-1c5a705a5daf.png" class=" slide-image">
+                    <div class="text">lidar view of point clouds</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"> 3 / 3</div>
+                    <img src="343584082-76114255-423c-47a5-8d30-e293fb3a21ec.png" class=" slide-image">
+                    <div class="text">Object Clusters </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <br>
+            <br>
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    let i;
+                    let slides =
+                        document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace("active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+            <div class="project-container">
+                <video width="520" height="440" controls class="center">
+                    <source src="Area coverage robot0 9_25_24 .mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p1 class="project1-description">
+                        In this project, I developed an Area Coverage algorithm using A* to avoid objects and cover a defined area. I detected objects using LiDAR to convert point clouds and get clusters of objects. This was used to determine
+                    where objects are located on a 2d map. This system also incorporated a gps system to determine latitude and 
+                    longitude of objects to generate waypoints for the path of the robot. 
+
+                    Tools: Livox Mid-360 (LiDAR) , Emlid Reach RS3 and Reach M2 LoRa radio, NVIDIA Jetson Orin, C++, CTest, 
+
+                </p1>
+                <div>
+                    <script src="script.js">
+
+                    </script>
+                </div>
+            </div>
+        </div>
+                <div class="project">
+                    <img src="project2.jpg" alt="Project 2">
+                    <p>Project 2 description.</p>
+                </div>
+                <!-- Add more projects as needed -->
+        </section>
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: your.email@example.com</p>
+            <!-- Add more contact details or a contact form as needed -->
+        </section>
 </body>
+
 </html
