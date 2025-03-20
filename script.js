@@ -6,8 +6,9 @@ window.onload = () => {
     const puzzles = [
       document.getElementById('puzzle1'),
       document.getElementById('puzzle2'),
-      document.getElementById('puzzle3'),
-      document.getElementById('puzzle4')
+      document.getElementById('puzzle4'),
+      document.getElementById('puzzle3')
+      
     ];
   
   
