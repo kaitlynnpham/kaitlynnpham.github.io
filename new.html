@@ -132,42 +132,76 @@
                     }
                 </script>
                 <div class="project-container">
-                    <video width="520" height="440" controls class="center">
-                        <source src="Area coverage robot0 9_25_24 .mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p1 class="project1-description">
-                        In this project, I developed an Area Coverage algorithm using A* to avoid objects and cover a
-                        defined area. I detected objects using LiDAR to convert point clouds and get clusters of
-                        objects. This was used to determine
-                        where objects are located on a 2d map. This system also incorporated a gps system to determine
-                        latitude and
-                        longitude of objects to generate waypoints for the path of the robot.
-                    </p1>
-
-                    <div>
-                        <script src="script.js">
-
-                        </script>
-                        <p class="tools">
-                           Tools & Technologies:
-                        <ul class = "list">
-                        <li>Livox Mid-360 (LiDAR): LiDAR sensor for high-precision 3D mapping.</li>
-                        <li>Emlid Reach RS3: GNSS receiver for accurate positioning.</li>
-                        <li>Reach M2 LoRa radios: Long-range communication system for data transmission.</li>
-                        <li>NVIDIA Jetson Orin: AI computing platform for real-time processing and analysis.</li>
-                        <li>C++</li>
-                        <li>CTest</li>
-                        <li>Madara Middleware (madara.ai): Middleware for multi-agent systems and autonomous
-                        applications.</li>
-                         </ul>
+                    <div class="video-section">
+                        <video width="520" height="440" controls>
+                            <source src="Area coverage robot0 9_25_24 .mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="video-caption">
+                            Area Coverage Demo
                         </p>
 
                     </div>
+                    <div class="project1-description">
+                        <h4>
+                            Project Overview:
+                        </h4>
+                        In this project, I designed and developed an autonomous robot intended to be equipped with
+                        a pressure washer system for cleaning pool decks. The main challenge was to create a system
+                        that
+                        could navigate around obstacles while ensuring complete area coverage.
+                        <h4>
+                            Key Contributions:
+                        </h4>
+                        <ul class="list">
+                            <li>Area Coverage Algorithm: I developed an area coverage algorithm using the A* Search
+                                method
+                                that was integrated into Madara Middleware. This technique to allow the robot to
+                                navigate
+                                efficiently,
+                                avoid obstacles, and fully cover a defined area.
+                            </li>
+                            <li> LiDAR Integration for Object Detection: I utilized LiDAR to capture point clouds and
+                                extract
+                                clusters of
+                                objects. This was used to determine where objects are located on a 2d grid map.
+                            </li>
+                            <li> GPS Waypoint Generation: This method also incorporated a gps system using Emlid Reach
+                                RS3 to
+                                determine precise latitude and longitude of objects. The recievers identified the
+                                location
+                                of
+                                the robot and this allowed us to convert the LiDAR cartesian coordinates to GPS
+                                coordinates.
+                            </li>
+                        </ul>
+
+                        <script src="script.js">
+
+                        </script>
+                       <h4>
+                            Tools & Technologies:
+                        </h4>
+                        <ul class="list">
+                            <li>Livox Mid-360 (LiDAR): LiDAR sensor for high-precision 3D mapping.</li>
+                            <li>Emlid Reach RS3: GNSS receiver for accurate positioning.</li>
+                            <li>Reach M2 LoRa radios: Long-range communication system for data transmission.
+                            </li>
+                            <li>NVIDIA Jetson Orin: AI computing platform for real-time processing and analysis.
+                            </li>
+                            <li>C++</li>
+                            <li>CTest</li>
+                            <li>Madara Middleware (madara.ai): Middleware for multi-agent systems and autonomous
+                                applications.</li>
+                        </ul>
+                        </p>
+                    </div>
                 </div>
-                <p class="video-caption">Area Coverage Demo</class>
             </div>
             <div class="project">
+                <h3>
+                   
+                </h3>
                 <img src="project2.jpg" alt="Project 2">
                 <p>Project 2 description.</p>
             </div>
