@@ -295,7 +295,7 @@ p1{
 
 
 
-.project1-description{
+.project-description{
     flex:1;
     max-width: 60%;
     text-align:left; 
@@ -333,5 +333,11 @@ h4{
     text-align:left; 
     color: rgb(162, 225, 173);
     font-weight: bold;
+}
+.project2-image{
+
+    margin-left: 20px;
+    margin-right:50px;
+}
  
- }
+ 

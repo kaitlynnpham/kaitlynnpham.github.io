@@ -21,6 +21,10 @@
 
         <p>Welcome</p>
 
+        <script src="loader.js">
+
+        </script>
+
     </div>
 
     <div id="homepage">
@@ -75,19 +79,19 @@
                         <img src="ImageToStl.com_room (2).png" class=" slide-image">
 
 
-                        <div class="text">Lidar View</div>
+                        <div class="text">Robot View of Area Using LiDAR</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"> 2 / 3</div>
                         <img src="343584045-9298d87d-b619-40fd-b876-1c5a705a5daf.png" class=" slide-image">
-                        <div class="text">Lidar View of Point Clouds</div>
+                        <div class="text">View of Point Clouds</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext"> 3 / 3</div>
                         <img src="343584082-76114255-423c-47a5-8d30-e293fb3a21ec.png" class=" slide-image">
-                        <div class="text">Object Clusters </div>
+                        <div class="text">Object Clusters From Point Clouds</div>
                     </div>
                     <a class="prev" onclick="plusSlides(-1)">❮</a>
                     <a class="next" onclick="plusSlides(1)">❯</a>
@@ -102,35 +106,9 @@
 
                 <br>
                 <br>
-                <script>
-                    let slideIndex = 1;
-                    showSlides(slideIndex);
-                    function plusSlides(n) {
-                        showSlides(slideIndex += n);
-                    }
-                    function currentSlide(n) {
-                        showSlides(slideIndex = n);
-                    }
-
-                    function showSlides(n) {
-                        let i;
-                        let slides =
-                            document.getElementsByClassName("mySlides");
-                        let dots = document.getElementsByClassName("dot");
-                        if (n > slides.length) {
-                            slideIndex = 1
-                        }
-                        if (n < 1) { slideIndex = slides.length }
-                        for (i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";
-                        }
-                        for (i = 0; i < dots.length; i++) {
-                            dots[i].className = dots[i].className.replace("active", "");
-                        }
-                        slides[slideIndex - 1].style.display = "block";
-                        dots[slideIndex - 1].className += " active";
-                    }
+                <script src="slideshow.js">
                 </script>
+
                 <div class="project-container">
                     <div class="video-section">
                         <video width="520" height="440" controls>
@@ -142,7 +120,7 @@
                         </p>
 
                     </div>
-                    <div class="project1-description">
+                    <div class="project-description">
                         <h4>
                             Project Overview:
                         </h4>
@@ -176,10 +154,7 @@
                             </li>
                         </ul>
 
-                        <script src="script.js">
-
-                        </script>
-                       <h4>
+                        <h4>
                             Tools & Technologies:
                         </h4>
                         <ul class="list">
@@ -200,19 +175,73 @@
             </div>
             <div class="project">
                 <h3>
-                   
+                    Classification Using a Neural Network Model
                 </h3>
-                <img src="project2.jpg" alt="Project 2">
-                <p>Project 2 description.</p>
+                <div class="project-container">
+                    <div class=project2-image>
+                        <img src="correlation.diabetes.png" alt="Project 2" width="520" height="440">
+                    </div>
+                    <div class="project-description">
+                        <h4>
+                            Project Overview:
+                        </h4>
+                        For this project, I collaborated with a team to develop a neural network model aimed at
+                        predicting whether an individual has diabetes. Our goal was to
+                        determine if we could reliably predict diabetes based on various health, lifestyle, and
+                        socioeconomic factors. The dataset we used categorizes individuals into three groups: diabetes,
+                        pre-diabetes, and healthy. It also includes a range of features for each individual.
+
+                        <h4>
+                            Key Contributions:
+                        </h4>
+                        <ul class="list">
+                            <li>Correlation Analysis: 
+                            </li>
+                            <li> LiDAR Integration for Object Detection: I utilized LiDAR to capture point clouds and
+                                extract
+                                clusters of
+                                objects. This was used to determine where objects are located on a 2d grid map.
+                            </li>
+                            <li> GPS Waypoint Generation: This method also incorporated a gps system using Emlid Reach
+                                RS3 to
+                                determine precise latitude and longitude of objects. The recievers identified the
+                                location
+                                of
+                                the robot and this allowed us to convert the LiDAR cartesian coordinates to GPS
+                                coordinates.
+                            </li>
+                        </ul>
+
+                        <h4>
+                            Tools & Technologies:
+                        </h4>
+                        <ul class="list">
+                            <li>Livox Mid-360 (LiDAR): LiDAR sensor for high-precision 3D mapping.</li>
+                            <li>Emlid Reach RS3: GNSS receiver for accurate positioning.</li>
+                            <li>Reach M2 LoRa radios: Long-range communication system for data transmission.
+                            </li>
+                            <li>NVIDIA Jetson Orin: AI computing platform for real-time processing and analysis.
+                            </li>
+                            <li>C++</li>
+                            <li>CTest</li>
+                            <li>Madara Middleware (madara.ai): Middleware for multi-agent systems and autonomous
+                                applications.</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                </div>
             </div>
-            <!-- Add more projects as needed -->
-        </section>
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: Kaitlynnpham@gmail.com</p>
-            <!-- Add more contact details or a contact form as needed -->
-        </section>
+
+    </div>
+    <!-- Add more projects as needed -->
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: Kaitlynnpham@gmail.com</p>
+        <!-- Add more contact details or a contact form as needed -->
+    </section>
 </body>
 
 </html
