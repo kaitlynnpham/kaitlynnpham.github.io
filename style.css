@@ -277,14 +277,7 @@ p1{
     }
 }
 
-.project{
-    margin-bottom: 40px; 
-    padding: 20px;
-    border: 2px solid #67d3bf; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-   
-} 
+
 
 .project-container{
     display:flex;
@@ -293,8 +286,6 @@ p1{
     gap: 5px;
 }
 
-
-
 .project-description{
     flex:1;
     max-width: 60%;
@@ -302,6 +293,54 @@ p1{
     margin-right: 60px;
     color: white; 
 
+}
+
+.project{
+    margin-bottom: 20px; 
+    padding: 20px;
+    border: 2px solid #67d3bf; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
+   
+} 
+.other-projects-container{
+        gap: 10px; /* Space between projects */
+        flex-wrap: wrap; /* Allow wrapping for multiple projects */
+        justify-content: center; /* Center the projects horizontally */
+        margin-top: 20px; /* Add some spacing above */
+        
+        
+        
+        
+}
+
+
+.other-projects{
+   
+    background-color: #9ac7c5; /* Background color for each project */
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    max-width: 50%; /* Maximum width of each project item */
+    width: 100%; /* Ensure projects take up full width inside their max-width */
+    box-sizing: border-box; 
+    margin: auto; 
+    padding: 20px;
+    
+    
+}
+
+.other-projects:hover {
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.other-projects h4 {
+    text-align: center;
+    color: rgb(82, 113, 87); 
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .project-overview{
@@ -325,7 +364,7 @@ color:white;
 }
 h3{
     text-align: left;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     color:#9ed0c6
 }
 
@@ -334,10 +373,54 @@ h4{
     color: rgb(162, 225, 173);
     font-weight: bold;
 }
+h5{
+    text-align:center; 
+    color: rgb(14, 30, 17);
+    font-weight: bold;
+    font-size: x-large;
+}
+
 .project2-image{
 
     margin-left: 20px;
     margin-right:50px;
 }
  
- 
+.list2{
+    list-style-type: none;
+    padding-left: 0;
+    color:rgb(135, 160, 160);
+    word-spacing: normal;
+}
+.project-link{
+    color:aqua;
+
+}
+.project-link:hover{
+    color:white;
+}
+.other-project-link{
+    color:rgb(48, 54, 54);
+
+}
+
+.other-project-link:hover{
+    color:rgb(213, 255, 255);
+
+}
+
+#contact{
+    background-color: rgb(128, 255, 255);
+    border-radius: 10px;
+    padding-bottom: 20px;
+    margin: auto; 
+    justify-content: center;
+}
+.contact-info{
+    display: inline-block;
+    color: rgb(185, 255, 202);
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    gap: 50px; /* Add some space between the items */
+    font-size: large;
+}

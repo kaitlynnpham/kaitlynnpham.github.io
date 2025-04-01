@@ -33,7 +33,6 @@
         <div class="nav">
             <a href="#contact">Contact</a>
             <a href="#projects">Portfolio</a>
-            <a href="#about">Home</a>
             <h1> Kaitlynn Pham</h1>
         </div>
 
@@ -124,33 +123,36 @@
                         <h4>
                             Project Overview:
                         </h4>
-                        In this project, I designed and developed an autonomous robot intended to be equipped with
-                        a pressure washer system for cleaning pool decks. The main challenge was to create a system
-                        that
-                        could navigate around obstacles while ensuring complete area coverage.
+                        During my internship, I collaborated with a team to develop an autonomous robot designed to be
+                        equipped with a pressure washer system for cleaning pool decks. Our primary challenge was to
+                        design a navigation system that could effectively maneuver around obstacles while ensuring
+                        complete coverage of the area.
+
                         <h4>
                             Key Contributions:
                         </h4>
                         <ul class="list">
                             <li>Area Coverage Algorithm: I developed an area coverage algorithm using the A* Search
                                 method
-                                that was integrated into Madara Middleware. This technique to allow the robot to
+                                that was integrated into Madara Middleware. This technique allowed the robot to
                                 navigate
                                 efficiently,
                                 avoid obstacles, and fully cover a defined area.
+                                <p>To View a Simplified Version: <a href="https://github.com/kaitlynnpham/Area_Coverage"
+                                        target="_blank" class="project-link">Area Coverage Algorithm</a></p>
                             </li>
                             <li> LiDAR Integration for Object Detection: I utilized LiDAR to capture point clouds and
-                                extract
-                                clusters of
-                                objects. This was used to determine where objects are located on a 2d grid map.
+                                applied plane segmentation to identify flat surfaces. Using the PCL (Point Cloud
+                                Library), I extracted Euclidean clusters to group objects and determine their locations
+                                on a 2D grid map. This approach enabled effective object detection and localization for
+                                the autonomous robot.
                             </li>
-                            <li> GPS Waypoint Generation: This method also incorporated a gps system using Emlid Reach
-                                RS3 to
-                                determine precise latitude and longitude of objects. The recievers identified the
-                                location
-                                of
-                                the robot and this allowed us to convert the LiDAR cartesian coordinates to GPS
-                                coordinates.
+                            <br>
+                            <li> GPS Waypoint Generation: We integrated a GPS system using the Emlid Reach RS3 to
+                                accurately capture the latitude and longitude of objects. The receivers tracked the
+                                robot's location, which allowed me to convert the LiDAR Cartesian coordinates into GPS
+                                coordinates. This data was then combined with the area coverage algorithm to enable
+                                precise waypoint navigation.
                             </li>
                         </ul>
 
@@ -164,12 +166,12 @@
                             </li>
                             <li>NVIDIA Jetson Orin: AI computing platform for real-time processing and analysis.
                             </li>
-                            <li>C++</li>
+                            <li>Programming Language: C++</li>
                             <li>CTest</li>
                             <li>Madara Middleware (madara.ai): Middleware for multi-agent systems and autonomous
                                 applications.</li>
                         </ul>
-                        </p>
+
                     </div>
                 </div>
             </div>
@@ -189,45 +191,83 @@
                         predicting whether an individual has diabetes. Our goal was to
                         determine if we could reliably predict diabetes based on various health, lifestyle, and
                         socioeconomic factors. The dataset we used categorizes individuals into three groups: diabetes,
-                        pre-diabetes, and healthy. It also includes a range of features for each individual.
+                        pre-diabetes, and healthy. It also includes a range of features for each individual. The model
+                        was able to
+                        achieve an average accuracy of 85% in predicting diabetes.
+                        <p>To view Project: <a href="https://github.com/David1000734/ML_Project" target="_blank"
+                                class="project-link">Neural Network
+                                Model Project</a></p>
+
 
                         <h4>
                             Key Contributions:
                         </h4>
                         <ul class="list">
-                            <li>Correlation Analysis: 
+                            <li>
+                                Conducted correlation analysis and created visualizations using Python and
+                                Pandas to analyze the relationships between key features, helping guide feature
+                                selection and model development.
                             </li>
-                            <li> LiDAR Integration for Object Detection: I utilized LiDAR to capture point clouds and
-                                extract
-                                clusters of
-                                objects. This was used to determine where objects are located on a 2d grid map.
-                            </li>
-                            <li> GPS Waypoint Generation: This method also incorporated a gps system using Emlid Reach
-                                RS3 to
-                                determine precise latitude and longitude of objects. The recievers identified the
-                                location
-                                of
-                                the robot and this allowed us to convert the LiDAR cartesian coordinates to GPS
-                                coordinates.
+                            <br>
+                            <li>
+
+                                Leveraged PyTorch for training the neural network model, and used Matplotlib to
+                                visualize the training vs. validation accuracy and training vs. validation loss over
+                                500 epochs. These visualizations provided valuable insights into model performance,
+                                helping identify potential issues such as overfitting and underfitting.
                             </li>
                         </ul>
 
-                        <h4>
-                            Tools & Technologies:
-                        </h4>
-                        <ul class="list">
-                            <li>Livox Mid-360 (LiDAR): LiDAR sensor for high-precision 3D mapping.</li>
-                            <li>Emlid Reach RS3: GNSS receiver for accurate positioning.</li>
-                            <li>Reach M2 LoRa radios: Long-range communication system for data transmission.
-                            </li>
-                            <li>NVIDIA Jetson Orin: AI computing platform for real-time processing and analysis.
-                            </li>
-                            <li>C++</li>
-                            <li>CTest</li>
-                            <li>Madara Middleware (madara.ai): Middleware for multi-agent systems and autonomous
-                                applications.</li>
+
+                        <ul class="list2">
+                            <li>Programming Language: Python</li>
+                            <li> Libraries: Pandas, PyTorch, Scikit-learn, Matplotlib</li>
+
                         </ul>
-                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="project">
+                <h3>
+                    Other Projects 
+                </h3>
+                <div class="other-project-container">
+                    </div>
+                    <div class="other-projects">
+                        <h4>
+                            2D Linked List 
+                        </h4>
+                        <p>To view: <a href="https://gist.github.com/kaitlynnpham/76e862520ca24710427c4ebfd149dd64" target="_blank"
+                                class="other-project-link">Project Link</a></p>
+                                <p>Programming Language: C++</p>  
+
+                            </div>
+                            <div class="other-projects">
+                                <h4>
+                                Cross-Word Puzzle 
+                                </h4>
+                        <p>To view: <a href="https://gist.github.com/kaitlynnpham/52a7e2c9f28446ffd1c4d94e2b34182a" target="_blank"
+                            class="other-project-link">Project Link</a></p>
+                            <p>Programming Language: C++</p>  
+                        </div>
+                        <div class="other-projects">
+                                <h4>
+                                    Linear Regression Model
+                                </h4>
+                        <p>To view: <a href="https://github.com/kaitlynnpham/Linear-Regression-Model" target="_blank"
+                            class="other-project-link">Project Link</a></p>
+                            <p>Programming Language: Python</p>  
+
+                        </div>
+                        <div class="other-projects">
+                            <h4>
+                            KNN Algorithm
+                                </h4>
+                                <p>To view: <a href="https://github.com/kaitlynnpham/KNN-Algorithm" target="_blank"
+                                    class="other-project-link">Project Link</a></p>
+                                    <p>Programming Language: Python</p>  
                     </div>
 
                 </div>
@@ -238,8 +278,18 @@
     </section>
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: Kaitlynnpham@gmail.com</p>
+        <br>
+        <h5>Contact Me</h5>
+     <div class = "contact-info" >
+        <p><a href="mailto:kaitlynnpham@gmail.com" target="_blank"
+            class="other-project-link">kaitlynnpham@gmail.com</a></p>
+        <p><a href="https://www.linkedin.com/in/kaitlynn-p-b3045b133/" target="_blank"
+            class="other-project-link">LinkedIn</a></p>
+        <p><a href="https://github.com/kaitlynnpham" target="_blank"
+            class="other-project-link">Github</a></p>
+
+    </div>
+            
         <!-- Add more contact details or a contact form as needed -->
     </section>
 </body>
