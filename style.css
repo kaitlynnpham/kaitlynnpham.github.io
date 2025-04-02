@@ -1,5 +1,8 @@
 body {
     background-color: rgb(0, 45, 43);
+    width: 1200px;
+    margin: 0 auto;
+    overflow-x: auto;
 }
 
 #introduction {
@@ -164,22 +167,16 @@ p1 {
 
 .skills-list {
     list-style-type: none;
-    /* Removes bullet points */
     padding: 0;
-    /* Removes default padding */
     margin: 0;
-    /* Removes default margin */
     text-indent: 0px;
     margin-bottom: 10px;
     margin-top: 20px;
 }
 
 .skills-list li {
-    /* Ensures header and content are on the same line */
     align-items: center;
-    /* Vertically aligns header and content */
     margin-bottom: 10px;
-    /* Optional: Adds space between items */
 }
 
 .skills-list h4 {
@@ -305,14 +302,12 @@ p1 {
     }
 }
 
-
-
 .project-container {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     gap: 40px;
-    flex-wrap:flex;
+    flex-wrap: flex;
 }
 
 .project-description {
@@ -336,13 +331,10 @@ p1 {
 
 .other-projects-container {
     gap: 10px;
-    /* Space between projects */
     flex-wrap: wrap;
-    /* Allow wrapping for multiple projects */
     justify-content: center;
-    /* Center the projects horizontally */
     margin-top: 20px;
-    /* Add some spacing above */
+
 
 
 
@@ -353,15 +345,12 @@ p1 {
 .other-projects {
 
     background-color: #9ac7c5;
-    /* Background color for each project */
     border-radius: 10px;
     color: rgb(0, 0, 0);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
     max-width: 50%;
-    /* Maximum width of each project item */
     width: 100%;
-    /* Ensure projects take up full width inside their max-width */
     box-sizing: border-box;
     margin: auto;
     padding: 20px;
@@ -371,7 +360,6 @@ p1 {
 
 .other-projects:hover {
     transform: scale(1.05);
-    /* Slight scaling effect on hover */
 }
 
 .other-projects h4 {
@@ -482,8 +470,6 @@ h5 {
     color: rgb(185, 255, 202);
     display: flex;
     justify-content: center;
-    /* Center the items horizontally */
     gap: 50px;
-    /* Add some space between the items */
     font-size: large;
 }
