@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(20, 25, 66);
+    background-color: rgb(0, 45, 43);
 }
 
 #introduction {
@@ -8,7 +8,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(4, 4, 42);
+    background-color: rgb(0, 45, 43);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +23,7 @@ body {
     padding: 20x;
     opacity: 0;
     animation: slideIn 3s ease-out forwards;
-    color: antiquewhite;
+    color: #9ed0c6;
     margin-top: 20px;
     margin-left: 20px;
 
@@ -31,8 +31,8 @@ body {
 
 #introduction .loader {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
@@ -87,7 +87,7 @@ body {
 }
 
 h1 {
-    color: rgb(99, 230, 228);
+    color: #67d3bf;
     text-align: left;
     font-size: 22px;
     padding-left: 2%;
@@ -159,9 +159,28 @@ p1{
     margin-bottom: 10px;
     color: white;
     text-align:left;
-    text-indent: 20px;
+    
 }
 
+.skills-list {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    text-indent: 0px;
+    margin-bottom: 10px;
+    margin-top:20px;
+}
+
+.skills-list li {
+     /* Ensures header and content are on the same line */
+    align-items: center; /* Vertically aligns header and content */
+    margin-bottom: 10px; /* Optional: Adds space between items */
+}
+.skills-list h4{
+    margin-right: 20px; 
+    margin:0;
+    margin-bottom:10px;
+}
 .about-image {
     flex: 1 1 30%;
   }
@@ -192,7 +211,7 @@ p1{
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: aqua;
+    color: #67d3bf;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -259,7 +278,7 @@ p1{
 
 .active,
 .dot:hover {
-    background-color: rgb(93, 161, 225);
+    background-color: #67d3bf;
 }
 
 .fade {
@@ -365,7 +384,7 @@ color:white;
 h3{
     text-align: left;
     padding-bottom: 20px;
-    color:#9ed0c6
+    color:#9ed0c6;
 }
 
 h4{
@@ -393,14 +412,14 @@ h5{
     word-spacing: normal;
 }
 .project-link{
-    color:aqua;
+    color:#67d3bf;
 
 }
 .project-link:hover{
     color:white;
 }
 .other-project-link{
-    color:rgb(48, 54, 54);
+    color:rgb(0, 45, 43);
 
 }
 
@@ -410,7 +429,7 @@ h5{
 }
 
 #contact{
-    background-color: rgb(128, 255, 255);
+    background-color: #67d3bf;
     border-radius: 10px;
     padding-bottom: 20px;
     margin: auto; 
