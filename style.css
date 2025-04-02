@@ -302,7 +302,7 @@ p1{
     display:flex;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 5px;
+    gap: 40px;
 }
 
 .project-description{
@@ -361,6 +361,9 @@ p1{
     font-weight: bold;
     font-size: 1.2rem;
 }
+.video-section{
+    margin-top: 20px;
+}
 
 .project-overview{
 
@@ -378,7 +381,8 @@ p1{
 .video-caption{
 
 text-align: center;
-color:white; 
+color: rgb(162, 225, 173);
+font-weight: bold;
 
 }
 h3{
