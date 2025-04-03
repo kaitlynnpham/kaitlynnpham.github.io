@@ -1,7 +1,7 @@
 body {
     background-color: rgb(255, 255, 226);
-    width: 100%;
-    margin: 0;
+    width: 1400px;
+    margin: 0 auto;
     overflow-x: auto;
 }
 
@@ -109,6 +109,7 @@ h2 {
     background-color: #2e5d1f;
     overflow: hidden;
     block-size: 50px;
+    width:100%;
 }
 
 .nav a {
@@ -118,6 +119,7 @@ h2 {
     text-decoration: none;
     font-size: 17px;
     padding: 14px 16px;
+    width:auto; 
 
 }
 
@@ -134,15 +136,6 @@ h2 {
 }
 
 
-
-p1 {
-
-    margin-left: auto;
-    font-size: medium;
-    color: white;
-
-}
-
 #about {
     display: flex;
     flex-wrap: wrap;
@@ -153,8 +146,13 @@ p1 {
     margin-bottom: 10px;
 }
 
+h2{
+   margin-top: 30px;
+}
+
 
 .about-content {
+
     width: 50%;
     padding: 10px;
     box-sizing: border-box;
@@ -402,7 +400,7 @@ p1 {
 h3 {
     text-align: left;
     padding-bottom: 20px;
-    color: #ffffff;
+    color: rgb(118, 175, 118) ;
 }
 
 h4 {
