@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(0, 45, 43);
+    background-color: rgb(255, 255, 226);
     width: 1200px;
     margin: 0 auto;
     overflow-x: auto;
@@ -11,7 +11,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0, 45, 43);
+    background-color:  #2e5d1f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@ body {
     padding: 20x;
     opacity: 0;
     animation: slideIn 3s ease-out forwards;
-    color: #9ed0c6;
+    color:rgb(255, 255, 226);
     margin-top: 20px;
     margin-left: 20px;
 
@@ -90,14 +90,14 @@ body {
 }
 
 h1 {
-    color: #67d3bf;
+    color: white;
     text-align: left;
     font-size: 22px;
     padding-left: 2%;
 }
 
 h2 {
-    color: rgb(157, 173, 189);
+    color: #006f62;
     text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 10px;
@@ -106,14 +106,14 @@ h2 {
 }
 
 .nav {
-    background-color: #010101;
+    background-color: #2e5d1f;
     overflow: hidden;
     block-size: 50px;
 }
 
 .nav a {
     float: right;
-    color: rgb(255, 255, 255);
+    color: white;
     text-align: center;
     text-decoration: none;
     font-size: 17px;
@@ -159,7 +159,7 @@ p1 {
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 10px;
-    color: white;
+    color:black;
     text-align: left;
 
 
@@ -183,6 +183,7 @@ p1 {
     margin-right: 20px;
     margin: 0;
     margin-bottom: 10px;
+    color:rgb(77, 121, 94);
 }
 
 .about-image {
@@ -217,7 +218,7 @@ p1 {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: #67d3bf;
+    color:#006f62;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -242,7 +243,7 @@ p1 {
 }
 
 .text {
-    color: rgb(253, 253, 253);
+    color: rgb(0, 42, 20);
     font-size: 15px;
     padding: 10px;
     position: relative;
@@ -276,7 +277,7 @@ p1 {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    background-color: rgb(252, 252, 252);
+    background-color:black;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -284,7 +285,7 @@ p1 {
 
 .active,
 .dot:hover {
-    background-color: #67d3bf;
+    background-color:  aquamarine;
 }
 
 .fade {
@@ -315,16 +316,16 @@ p1 {
     max-width: 60%;
     text-align: left;
     margin-right: 60px;
-    color: white;
+    color: rgb(0, 0, 0);
 
 }
 
 .project {
     margin-bottom: 20px;
     padding: 20px;
-    border: 2px solid #67d3bf;
+    border: 2px solid #006f62;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px #006f62;
 
 
 }
@@ -344,7 +345,7 @@ p1 {
 
 .other-projects {
 
-    background-color: #9ac7c5;
+    background-color: rgb(112, 160, 131);
     border-radius: 10px;
     color: rgb(0, 0, 0);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -364,7 +365,7 @@ p1 {
 
 .other-projects h4 {
     text-align: center;
-    color: rgb(82, 113, 87);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -379,13 +380,13 @@ p1 {
 .project-overview {
 
     text-align: left;
-    color: white;
+    color: rgb(9, 47, 16);
     font-weight: bold;
 }
 
 
 .list {
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: left;
 
 }
@@ -393,7 +394,7 @@ p1 {
 .video-caption {
 
     text-align: center;
-    color: rgb(162, 225, 173);
+    color: rgb(77, 121, 94);
     font-weight: bold;
 
 }
@@ -401,18 +402,18 @@ p1 {
 h3 {
     text-align: left;
     padding-bottom: 20px;
-    color: #9ed0c6;
+    color: #ffffff;
 }
 
 h4 {
     text-align: left;
-    color: rgb(162, 225, 173);
+    color: rgb(77, 121, 94);
     font-weight: bold;
 }
 
 h5 {
     text-align: center;
-    color: rgb(14, 30, 17);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: x-large;
 }
@@ -432,33 +433,34 @@ h5 {
 }
 
 .list2 {
-    list-style-type: none;
+    /* list-style-type: none; */
     padding-left: 0;
-    color: rgb(135, 160, 160);
+    color: rgb(112, 123, 123);
     word-spacing: normal;
 }
 
 .project-link {
-    color: #67d3bf;
+    color:rgb(125, 148, 91);
 
 }
 
 .project-link:hover {
-    color: white;
+    color:  aquamarine;
 }
 
 .other-project-link {
     color: rgb(0, 45, 43);
-
-}
-
-.other-project-link:hover {
     color: rgb(213, 255, 255);
 
 }
 
+.other-project-link:hover {
+    color: rgb(0, 45, 43);
+
+}
+
 #contact {
-    background-color: #67d3bf;
+    background-color: #2e5d1f;
     border-radius: 10px;
     padding-bottom: 20px;
     margin: auto;
