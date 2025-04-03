@@ -21,14 +21,15 @@ body {
 
 
 #introduction p {
-    font-size: 50px;
+    font-size: 55px;
     text-align: center;
-    padding: 20x;
+    padding: 25px;
     opacity: 0;
     animation: slideIn 3s ease-out forwards;
     color:rgb(255, 255, 226);
     margin-top: 20px;
     margin-left: 20px;
+    font-family: fantasy;
 
 }
 
@@ -90,19 +91,43 @@ body {
 }
 
 h1 {
-    color: white;
+    color: rgb(202, 255, 176);
     text-align: left;
     font-size: 22px;
-    padding-left: 2%;
+    padding-left: 1%;
+    font-family: monospace;
 }
 
 h2 {
     color: #006f62;
     text-align: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 1%;
     margin-bottom: 10px;
     font-size: 20px;
+    margin-top: 36px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
 
+h3 {
+    text-align: left;
+    padding-bottom: 20px;
+    color: rgb(118, 175, 118) ;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+h4 {
+    text-align: left;
+    color: rgb(77, 121, 94);
+    font-weight: bold;
+}
+
+h5 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: x-large;
 }
 
 .nav {
@@ -120,11 +145,12 @@ h2 {
     font-size: 17px;
     padding: 14px 16px;
     width:auto; 
+    font-family: sans-serif;
 
 }
 
 .nav a:hover {
-    color: rgb(98, 234, 227);
+    color: rgb(202, 255, 176);
 }
 
 
@@ -146,12 +172,10 @@ h2 {
     margin-bottom: 10px;
 }
 
-h2{
-   margin-top: 30px;
-}
 
 
-.about-content {
+
+.about_content {
 
     width: 50%;
     padding: 10px;
@@ -159,17 +183,32 @@ h2{
     margin-bottom: 10px;
     color:black;
     text-align: left;
+    font-family: sans-serif;
 
 
 }
 
-.skills-list {
+.about_image {
+    width: 45%;
+
+}
+
+.about_image img {
+    margin-top: 25px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills_list {
     list-style-type: none;
     padding: 0;
     margin: 0;
     text-indent: 0px;
     margin-bottom: 10px;
     margin-top: 20px;
+    font-family: sans-serif;
 }
 
 .skills-list li {
@@ -182,21 +221,8 @@ h2{
     margin: 0;
     margin-bottom: 10px;
     color:rgb(77, 121, 94);
+    
 }
-
-.about-image {
-    width: 45%;
-
-}
-
-.about-image img {
-    margin-top: 25px;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 
 .slideshow {
     max-width: 1000px;
@@ -204,7 +230,7 @@ h2{
     margin: auto;
 }
 
-.mySlides {
+.my_slides {
     display: none;
 }
 
@@ -249,6 +275,7 @@ h2{
     width: 100%;
     text-align: center;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .numbertext {
@@ -283,7 +310,7 @@ h2{
 
 .active,
 .dot:hover {
-    background-color:  aquamarine;
+    background-color:  rgb(165, 243, 127);
 }
 
 .fade {
@@ -301,7 +328,7 @@ h2{
     }
 }
 
-.project-container {
+.project_container {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -309,12 +336,13 @@ h2{
     flex-wrap: flex;
 }
 
-.project-description {
+.project_description {
     flex: 1;
     max-width: 60%;
     text-align: left;
     margin-right: 60px;
     color: rgb(0, 0, 0);
+    font-family: sans-serif;
 
 }
 
@@ -328,7 +356,7 @@ h2{
 
 }
 
-.other-projects-container {
+.other_projects_container {
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
@@ -341,7 +369,7 @@ h2{
 }
 
 
-.other-projects {
+.other_projects {
 
     background-color: rgb(112, 160, 131);
     border-radius: 10px;
@@ -353,27 +381,35 @@ h2{
     box-sizing: border-box;
     margin: auto;
     padding: 20px;
+    font-family: sans-serif;
 
 
 }
 
-.other-projects:hover {
+.other_projects:hover {
     transform: scale(1.05);
 }
 
-.other-projects h4 {
+.other_projects h4 {
     text-align: center;
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 1.2rem;
 }
 
-.video-section {
+.video_section {
     margin-top: 20px;
     overflow: hidden;
 }
 
+.video_caption {
 
+    text-align: center;
+    color: rgb(77, 121, 94);
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
 
 .project-overview {
 
@@ -386,35 +422,13 @@ h2{
 .list {
     color: rgb(0, 0, 0);
     text-align: left;
+    font-family: sans-serif;
 
 }
 
-.video-caption {
 
-    text-align: center;
-    color: rgb(77, 121, 94);
-    font-weight: bold;
 
-}
 
-h3 {
-    text-align: left;
-    padding-bottom: 20px;
-    color: rgb(118, 175, 118) ;
-}
-
-h4 {
-    text-align: left;
-    color: rgb(77, 121, 94);
-    font-weight: bold;
-}
-
-h5 {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: x-large;
-}
 
 .project2-image {
 
@@ -437,22 +451,21 @@ h5 {
     word-spacing: normal;
 }
 
-.project-link {
+.project_link {
     color:rgb(125, 148, 91);
 
 }
 
-.project-link:hover {
-    color:  aquamarine;
+.project_link:hover {
+    color:  rgb(170, 249, 131);
 }
 
-.other-project-link {
-    color: rgb(0, 45, 43);
-    color: rgb(213, 255, 255);
+.other_project_link {
+    color: rgb(202, 255, 176);
 
 }
 
-.other-project-link:hover {
+.other_project_link:hover {
     color: rgb(0, 45, 43);
 
 }
@@ -465,11 +478,12 @@ h5 {
     justify-content: center;
 }
 
-.contact-info {
+.contact_info {
     display: inline-block;
     color: rgb(185, 255, 202);
     display: flex;
     justify-content: center;
     gap: 50px;
     font-size: large;
+    
 }
