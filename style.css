@@ -125,7 +125,7 @@ h4 {
 
 h5 {
     text-align: center;
-    color: rgb(255, 255, 255);
+     color: rgb(185, 255, 202);
     font-weight: bold;
     font-size: x-large;
 }
@@ -355,6 +355,15 @@ h5 {
 
 
 }
+.project_link {
+    color:rgb(125, 148, 91);
+
+}
+
+.project_link:hover {
+    color:  rgb(170, 249, 131);
+}
+
 
 .other_projects_container {
     gap: 10px;
@@ -377,11 +386,19 @@ h5 {
     margin: auto;
     padding: 20px;
     font-family: sans-serif;
+    text-decoration: none;
+    
 
 }
 
+
 .other_projects:hover {
     transform: scale(1.05);
+    background-color: rgb(170, 220, 191);
+    color: grey;
+    text-decoration: none;
+    
+   
 }
 
 .other_projects h4 {
@@ -389,6 +406,19 @@ h5 {
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 1.2rem;
+    text-decoration: none;
+
+}
+
+.other_project_link {
+   text-decoration: none;
+
+}
+
+.other_project_link:hover {
+    color: rgb(0, 45, 43);
+    text-decoration: none;
+
 }
 
 .video_section {
@@ -421,9 +451,6 @@ h5 {
 }
 
 
-
-
-
 .project2-image {
 
     margin-left: 20px;
@@ -445,24 +472,6 @@ h5 {
     word-spacing: normal;
 }
 
-.project_link {
-    color:rgb(125, 148, 91);
-
-}
-
-.project_link:hover {
-    color:  rgb(170, 249, 131);
-}
-
-.other_project_link {
-    color: rgb(202, 255, 176);
-
-}
-
-.other_project_link:hover {
-    color: rgb(0, 45, 43);
-
-}
 
 #contact {
     background-color: #2e5d1f;
@@ -473,11 +482,21 @@ h5 {
 }
 
 .contact_info {
-    display: inline-block;
     color: rgb(185, 255, 202);
     display: flex;
     justify-content: center;
-    gap: 50px;
-    font-size: large;
+    gap: 100px;
+    font-size: x-large;
     
 }
+
+.contact_link{
+  color: white;  
+}
+
+.contact_link:hover{
+ color:rgb(165, 243, 127);
+}
+
+
+
