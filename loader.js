@@ -2,6 +2,7 @@
 window.onload = () => {
   const welcomeScreen = document.getElementById('introduction');
   const homepage = document.getElementById('homepage');
+  const welcomeText = document.getElementById('welcome-text');
 
   const puzzles = [
     document.getElementById('puzzle1'),
@@ -14,7 +15,11 @@ window.onload = () => {
 
   welcomeScreen.style.display = 'flex';
 
+  setTimeout(() => {
+    welcomeText.style.opacity = 1;
+  }, 200);
 
+  
   puzzles.forEach((tile, index) => {
     setTimeout(() => {
       tile.style.opacity = 1;

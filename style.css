@@ -20,15 +20,14 @@ body {
 }
 
 
-#introduction p {
+#welcome-text{
     font-size: 55px;
-    text-align: center;
+    text-align: right;
     padding: 25px;
     opacity: 0;
-    animation: slideIn 3s ease-out forwards;
+    animation: slideIn 3s ease-out forwards; 
     color:rgb(255, 255, 226);
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 0px;
     font-family: fantasy;
 
 }
