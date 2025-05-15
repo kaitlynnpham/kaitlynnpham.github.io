@@ -120,6 +120,8 @@ h4 {
     text-align: left;
     color: rgb(77, 121, 94);
     font-weight: bold;
+    font-family: sans-serif;
+    
 }
 
 h5 {
@@ -379,8 +381,7 @@ h5 {
     color: rgb(0, 0, 0);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
-    max-width: 50%;
-    width: 100%;
+    max-width: 80%;
     box-sizing: border-box;
     margin: auto;
     padding: 20px;
@@ -442,12 +443,33 @@ h5 {
 }
 
 
-.list {
+.list{
     color: rgb(0, 0, 0);
     text-align: left;
     font-family: sans-serif;
-
+   
 }
+.list-project2-key{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-family: sans-serif;
+   
+}
+
+
+.project-2{
+    display: flex;
+    gap: 35px; /* Space between columns */
+    flex-wrap: wrap; /* Wrap on smaller screens */
+}
+
+.project-2-column {
+    flex: 1; /* Each takes 50% of available width */
+    min-width: 300px; /* Optional: for responsiveness */
+    max-width: 600px;
+}
+
+
 
 
 .project2-image {
