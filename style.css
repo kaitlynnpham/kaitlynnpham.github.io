@@ -11,7 +11,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:  #2e5d1f;
+    background-color: #2e5d1f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,13 +20,13 @@ body {
 }
 
 
-#welcome-text{
+#welcome-text {
     font-size: 55px;
     text-align: right;
     padding: 100px;
     opacity: 0;
-    animation: slideIn 3s ease-out forwards; 
-    color:rgb(255, 255, 226);
+    animation: slideIn 3s ease-out forwards;
+    color: rgb(255, 255, 226);
     margin-left: 0px;
     font-family: fantasy;
 
@@ -111,7 +111,7 @@ h2 {
 h3 {
     text-align: left;
     padding-bottom: 20px;
-    color: rgb(118, 175, 118) ;
+    color: rgb(118, 175, 118);
     font-family: sans-serif;
     font-size: 17px;
 }
@@ -121,12 +121,12 @@ h4 {
     color: rgb(77, 121, 94);
     font-weight: bold;
     font-family: sans-serif;
-    
+
 }
 
 h5 {
     text-align: center;
-     color: rgb(185, 255, 202);
+    color: rgb(185, 255, 202);
     font-weight: bold;
     font-size: x-large;
 }
@@ -135,7 +135,7 @@ h5 {
     background-color: #2e5d1f;
     overflow: hidden;
     block-size: 50px;
-    width:100%;
+    width: 100%;
 }
 
 .nav a {
@@ -145,7 +145,7 @@ h5 {
     text-decoration: none;
     font-size: 17px;
     padding: 14px 16px;
-    width:auto; 
+    width: auto;
     font-family: sans-serif;
 
 }
@@ -182,7 +182,7 @@ h5 {
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 10px;
-    color:black;
+    color: black;
     text-align: left;
     font-family: sans-serif;
 
@@ -221,8 +221,8 @@ h5 {
     margin-right: 20px;
     margin: 0;
     margin-bottom: 10px;
-    color:rgb(77, 121, 94);
-    
+    color: rgb(77, 121, 94);
+
 }
 
 .slideshow {
@@ -243,7 +243,7 @@ h5 {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color:#006f62;
+    color: #006f62;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -303,7 +303,7 @@ h5 {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    background-color:black;
+    background-color: black;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -311,7 +311,7 @@ h5 {
 
 .active,
 .dot:hover {
-    background-color:  rgb(165, 243, 127);
+    background-color: rgb(165, 243, 127);
 }
 
 .fade {
@@ -356,13 +356,14 @@ h5 {
 
 
 }
+
 .project_link {
-    color:rgb(125, 148, 91);
+    color: rgb(125, 148, 91);
 
 }
 
 .project_link:hover {
-    color:  rgb(170, 249, 131);
+    color: rgb(170, 249, 131);
 }
 
 
@@ -387,7 +388,7 @@ h5 {
     padding: 20px;
     font-family: sans-serif;
     text-decoration: none;
-    
+
 
 }
 
@@ -397,8 +398,8 @@ h5 {
     background-color: rgb(170, 220, 191);
     color: grey;
     text-decoration: none;
-    
-   
+
+
 }
 
 .other_projects h4 {
@@ -411,7 +412,7 @@ h5 {
 }
 
 .other_project_link {
-   text-decoration: none;
+    text-decoration: none;
 
 }
 
@@ -422,9 +423,14 @@ h5 {
 }
 
 .video_section {
-    margin-top: 20px;
+    margin-top: 100px;
     overflow: hidden;
+    margin-left: 20px;
+    margin-right: 50px;
+    
+    
 }
+
 
 .video_caption {
 
@@ -443,29 +449,34 @@ h5 {
 }
 
 
-.list{
+.list {
     color: rgb(0, 0, 0);
     text-align: left;
     font-family: sans-serif;
-   
+
 }
-.list-project2-key{
+
+.list-project2-key {
     color: rgb(0, 0, 0);
     text-align: left;
     font-family: sans-serif;
-   
+
 }
 
 
-.project-2{
+.project-2 {
     display: flex;
-    gap: 35px; /* Space between columns */
-    flex-wrap: wrap; /* Wrap on smaller screens */
+    gap: 35px;
+    /* Space between columns */
+    flex-wrap: wrap;
+    /* Wrap on smaller screens */
 }
 
 .project-2-column {
-    flex: 1; /* Each takes 50% of available width */
-    min-width: 300px; /* Optional: for responsiveness */
+    flex: 1;
+    /* Each takes 50% of available width */
+    min-width: 300px;
+    /* Optional: for responsiveness */
     max-width: 600px;
 }
 
@@ -486,20 +497,20 @@ h5 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.project3-image {
-
-    margin-left: 20px;
-    margin-right: 50px;
+.project3-image video{
+   
+   
     overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: auto;        
+    box-sizing: border-box;
+    
+
 }
 
-.project3-image img {
-    margin-top: 70px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px; 
-}
+
 
 .list2 {
     /* list-style-type: none; */
@@ -523,16 +534,13 @@ h5 {
     justify-content: center;
     gap: 100px;
     font-size: x-large;
-    
+
 }
 
-.contact_link{
-  color: white;  
+.contact_link {
+    color: white;
 }
 
-.contact_link:hover{
- color:rgb(165, 243, 127);
+.contact_link:hover {
+    color: rgb(165, 243, 127);
 }
-
-
-
